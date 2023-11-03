@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" class="bg">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- dashboard -->
+  <link rel="stylesheet" href="./Asset/bootstrap.min.css">
+    <script src="./Asset/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap" rel="stylesheet" />
+  <!-- Google icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Bootstrap 5 icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./dashboard/dashboard.css" />
+  <!-- Font Awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./dashboard/dashboard.css">
+
+  <!-- dash_2  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="./dashboard/dashboard.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./dashboard/dashboard.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Chart cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+
+</head>
+
+<body>
+
+  <body id="body-pd" class="bg">
+    <header class="header" id="header">
+      <div class="header_toggle text-white">
+        <i class='bx bx-menu' id="header-toggle"></i>
+      </div>
+
+      <!-- <nav class="header_nav">
+        <ul class="head_text d-flex justify-content-center">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./download.html">Download</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li></li>
+        </ul>
+      </nav> -->
+      <p class="text-white"></p>
+      <div class="header_img">
+        <img src="./images/profile.png" alt="">
+      </div>
+
+      </div>
+
+    </header>
+    <div class="l-navbar" id="nav-bar">
+
+      <nav class="nav">
+        <div>
+          <a href="./index.html" class="nav_logo">
+            <i class='bx bx-store nav_logo-icon'></i>
+            <span class="nav_logo-name">Shan Store</span>
+          </a>
+          <div class="nav_list">
+            <a href="./dashboard.html" class="nav_link active">
+              <i class='bx bx-grid-alt nav_icon'></i>
+              <span class="nav_name">Dashboard</span>
+            </a>
+            <a href="./table.html" class="nav_link">
+              <i class='bx bx-user nav_icon'></i>
+              <span class="nav_name">Users</span>
+            </a>
+            <a href="./contact.html" class="nav_link">
+              <i class='bx bx-message-square-detail nav_icon'></i>
+              <span class="nav_name">Messages</span>
+            </a>
+            <!-- <a href="#" class="nav_link">
+              <i class='bx bx-bookmark nav_icon'></i>
+              <span class="nav_name">Bookmark</span>
+            </a> -->
+            <!-- <a href="#" class="nav_link">
+              <i class='bx bx-folder nav_icon'></i>
+              <span class="nav_name">Files</span>
+            </a> -->
+            <a href="#" class="nav_link">
+              <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+              <span class="nav_name">Stats</span>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="nav_link">
+          <i class='bx bx-log-out nav_icon'></i>
+          <span class="nav_name">SignOut</span>
+        </a>
+      </nav>
+    </div>
+
+    <!--Container Main start-->
+
+    <h4>Main Components</h4>
+    <div class="container">
+      <!-- Content Row-1 -->
+      <div class="text text-white justify-content-center d-flex pt-5">
+        <h1>Dashboard</h1>
+      </div>
+
+      <!-- Row-2 -->
+      <div class="row pt-5">
+
+        <!-- Column-1 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./table.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Total License<small class="text-muted"></small></p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_total_license material-symbols-outlined">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-2 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./recent_sales.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Recent Sales</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_recent_sales material-symbols-outlined">
+                      <i class="fa-solid fa-truck-fast"></i>
+                    </span>
+                    <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/new.png"
+                                      alt="new" /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-3 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./expiration_alert.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Expiration Alerts</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_expiration_alert material-symbols-outlined">
+                      <i class="fa-regular fa-clock"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-4 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./license_activation.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>License Activation</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_license_activation material-symbols-outlined icon">
+                      <i class="fa-solid fa-key"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row">
+        <!-- Column-5 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./tables.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Revenue Overview</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="material-symbols-outlined reveneue_overview">
+                      <i class="bi bi-cash-coin"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-6 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./feedback.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Feedback</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="feedback material-symbols-outlined">
+                      <i class="fa-regular fa-comment-dots"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-7 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./support.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>Support</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_support material-symbols-outlined">
+                      <i class="fa-solid fa-headset"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Column-8 -->
+        <div class="col-xl-3 col-sm-6 col-12">
+          <a href="./license_status.html">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex">
+                  <div class="flex-grow-1 align-self-center">
+                    <p>License Status</p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <span class="icon_license_status material-symbols-outlined icon_license_status">
+                      <i class="fa-solid fa-heart-circle-check"></i>
+                    </span>
+                    <!-- <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/like--v2.png"
+                                          alt="like--v2" /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Row 2 end -->
+
+      <!-- Row 3 -->
+      <div class="row py-2">
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-primary h-100 py-2">
+            <div class="card-body_dashboard">
+              <div class="text-center mb-3 pt-2">
+                <h5>License</h5>
+              </div>
+              <div class="d-flex justify-content-between px-3">
+                <p>Sold</p>
+                <button class="btn_dashboad text-white" type="button">
+                  40
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Active</p>
+                <button class="btn_dashboad text-white" type="button">
+                  15
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Inactive</p>
+                <button class="btn_dashboad text-white" type="button">
+                  10
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p class="card_text">Expired</p>
+                <button class="btn_dashboad text-white" type="button">
+                  18
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-primary h-100 py-2">
+            <div class="card-body_dashboard">
+              <div class="text-center mb-3 pt-2">
+                <h5>Total License</h5>
+              </div>
+              <div class="d-flex justify-content-between px-3">
+                <p>Sold</p>
+                <button class="btn_dashboad text-white" type="button">
+                  40
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Active</p>
+                <button class="btn_dashboad text-white" type="button">
+                  15
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Inactive</p>
+                <button class="btn_dashboad text-white" type="button">
+                  10
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p class="card_text">Expired</p>
+                <button class="btn_dashboad text-white" type="button">
+                  18
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-primary h-100 py-2">
+            <div class="card-body_dashboard">
+              <div class="text-center mb-3 pt-2">
+                <h5>Total License</h5>
+              </div>
+              <div class="d-flex justify-content-between px-3">
+                <p>Sold</p>
+                <button class="btn_dashboad text-white" type="button">
+                  40
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Active</p>
+                <button class="btn_dashboad text-white" type="button">
+                  15
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Inactive</p>
+                <button class="btn_dashboad text-white" type="button">
+                  10
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p class="card_text">Expired</p>
+                <button class="btn_dashboad text-white" type="button">
+                  18
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-primary h-100 py-2">
+            <div class="card-body_dashboard">
+              <div class="text-center mb-3 pt-2">
+                <h5>Total License</h5>
+              </div>
+              <div class="d-flex justify-content-between px-3">
+                <p>Sold</p>
+                <button class="btn_dashboad text-white" type="button">
+                  40
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Active</p>
+                <button class="btn_dashboad text-white" type="button">
+                  15
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p>Inactive</p>
+                <button class="btn_dashboad text-white" type="button">
+                  10
+                </button>
+              </div>
+            </div>
+            <div class="card-body_dashboard">
+              <div class="d-flex justify-content-between px-3 pt-1">
+                <p class="card_text">Expired</p>
+                <button class="btn_dashboad text-white" type="button">
+                  18
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- test start-->
+      <div class="row">
+
+        <!-- Column-1 -->
+        <div class="col-xl-6 col-md-6 ">
+          <div class="card" style="background:#2f303a">
+            <div class="card-body" style="height:400px; padding-bottom:120px;background:#2f303a;">
+              <h3 class="text-center">Monthly Sales</h3>
+              <div class="d-flex align-items-center text-start  py-2">
+                <div class="col-md-2">
+                  <label for="yearSelect" class="form-label">Select Year:</label>
+                </div>
+                <div class="col-md-2 px-2">
+                  <select id="yearSelect" class="form-select form-select-sm">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select>
+                </div>
+              </div>
+              </select>
+              <canvas id="myChart"></canvas>
+              <script src="./dashboard/chart_bar.js"></script>
+            </div>
+          </div>
+        </div>
+        <!-- Column-2 -->
+        <div class="col-xl-6 col-md-6">
+          <div class="card" style="background:#2f303a">
+            <div class="card-body" style="height:400px; padding-bottom:120px;background:#2f303a;">
+              <h3 class="text-center">Revenew 546Overview</h3>
+              <div class="d-flex align-items-center text-start py-2">
+                <div class="col-md-2">
+                  <label for="yearSelect_line" class="form-label">Select Year:</label>
+                </div>
+                <div class="col-md-2 px-2">
+                  <select id="yearSelect_line" class="form-select form-select-sm">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                  </select>
+                </div>
+              </div>
+              </select>
+              <canvas id="chart_line"></canvas>
+              <script src="./dashboard/chart_line.js"></script>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-xl-6 col-md-6">
+          <div class="card" style="background:black">
+            <div class="card-body" style="height:400px; padding-bottom:120px;background:black;">
+              <h1 class="text-center">Overview</h1>
+              <div class="d-flex align-items-center text-end py-2">
+                <div class="col-md-3">
+                  <label for="yearSelect_line" class="form-label">Select Year:</label>
+                </div>
+                <div class="col-md-2 px-2">
+                  <select id="yearSelect_line" class="form-select form-select-sm">
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                  </select>
+                </div>
+              </div>
+              </select>
+              <canvas id="chart_line"></canvas>
+              <script src="./chart_line_test.js"></script>
+            </div>
+          </div>
+        </div> -->
+        <!-- Column-2 -->
+        <!-- <div class="col-xl-6 col-md-6">
+          <div class="card" style="background:black">
+            <h4 class="text-center pt-2">Overview</h4>
+            <div class="card-body" style="height:400px;background:black;">
+              <canvas id="chart_line"></canvas>
+            </div>
+            <script src="./chart_line_test.js"></script>
+          </div>
+        </div> -->
+
+      </div>
+
+    </div>
+
+    </div>
+    <!-- test end-->
+
+    <!--Container Main end-->
+  </body>
+
+  <style>
+    @media screen and (max-width: 768px) {
+
+      #myChart {
+        max-width: 100%;
+        height: auto;
+        padding: none;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+
+      #myChart {
+        max-width: 100%;
+        height: 0px;
+        padding: 0px;
+      }
+    }
+
+
+    #yearSelect_line,#yearSelect{
+      width: auto;
+    }
+
+    .form-label {
+      margin-bottom: 0rem;
+  }
+
+
+
+
+
+
+
+  </style>
+
+</html>

@@ -1,0 +1,365 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.bg {
+    background-color: #1e1e24;
+}
+
+/* Login Container Styles */
+.box-area {
+    width: 830px;
+}
+
+/* Right Box Styles */
+.right-box {
+    padding: 40px 30px 40px 40px;
+    background-color: #22232a;
+    color: #ffffff;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Custom Placeholder Styles */
+::placeholder {
+    font-size: 16px;
+    color: #06c264;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+/* Responsive Styles for Small Screens */
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box {
+        padding: 20px;
+    }
+}
+
+/* Button Styles */
+.btn {
+    background-color: #6e34f4;
+    transition: .3s ease-in-out;
+    width: 120px;
+    height: auto;
+    border: none;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+/* Button Hover Styles */
+.btn:hover {
+    background-color: #2dc995;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+    border: none;
+}
+
+/* cart Button Styles */
+.cart_btn {
+    border-radius: 5px;
+    background-color: #6e34f4;
+    transition: .3s ease-in-out;
+    font-size: 15px;
+    height: auto;
+    border: none;
+    font-weight: 600;
+}
+
+.cart_btn:hover {
+    background-color: #06c264;
+    transition: .3s ease-in-out;
+}
+
+/* Link Styles */
+a {
+    color: rgb(68, 194, 253);
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #47fda2;
+    transition: 0.3s ease-in-out;
+}
+
+/* Form Styles */
+.form-control,
+.form-select,.form-select-sm {
+    background-color: #22232a;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #40404b;
+    color: white;
+
+}
+
+.form-control:focus,.form-select-sm:focus {
+    background-color: #22232a;
+    color: #ffffff;
+    box-shadow: none;
+    border-color: #6e34f4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 24px #000000;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 5rem #000000 !important;
+}
+
+/* Card Design for Download Page */
+html,
+body {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    font-family: 'Figtree', sans-serif;
+}
+
+.wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.container-product {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1.heading {
+    color: #fff;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.15em;
+    font-weight: 900;
+    margin: 0 0 0.5em;
+    color: #505050;
+}
+
+@media (min-width: 450px) {
+    h1.heading {
+        font-size: 3.55em;
+    }
+}
+
+@media (min-width: 760px) {
+    h1.heading {
+        font-size: 3.05em;
+    }
+}
+
+@media (min-width: 900px) {
+    h1.heading {
+        font-size: 3.25em;
+        margin: 0 0 0.3em;
+    }
+}
+
+.card {
+    border: 2px solid #2f303a;
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #2f303a;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.25s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 17px 0 #0000009f, 0 6px 20px 0 #00000065;
+}
+
+.img-card {
+    width: 100%;
+    height: 200px;
+    /* border-top-left-radius: 2px;
+    border-top-right-radius: 2px; */
+    display: block;
+    overflow: hidden;
+}
+
+
+
+.img-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.25s ease;
+}
+
+.img-card img:hover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.25s ease;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-title {
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card-title a {
+    color: #000;
+    text-decoration: none !important;
+}
+
+
+
+.login_input:hover {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.login_input{
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+/* 30 Sep 2023 11:15pm Will fix later */
+/* 
+@media (max-width: 768px){
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    .right-box{
+        padding: 90px 80px 90px 80px;
+    }
+
+
+}
+@media (min-width: 769px){
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 100%;
+    
+    }
+    .right-box{
+        padding: 90px 80px 90px 80px;
+    }
+
+
+    
+}
+@media (min-width: 992px){
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        height: 100%;
+    
+    }
+    .right-box{
+        padding: 50px 80px 80px 80px;
+    }
+
+
+}
+
+@media (max-width: 540px){
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 100%;
+
+    }
+    .container{
+        padding: 00px;
+    }
+    .right-box{
+        padding: 50px 80px 50px 80px;
+    }
+
+
+ 
+}
+@media (max-width: 280px){
+    .col-md-6 {
+
+        width: 100%;
+        height: 100%;
+
+    }
+    .container{
+        padding: 0px;
+    }
+
+    .right-box{
+        padding: 40px 40px 40px 40px;
+    }
+
+
+ 
+}
+
+@media (min-width: 150px) and (max-width: 400px) {
+    .col-md-6 {
+
+        width: 100%;
+        height: 100%;
+
+    }
+    .container{
+        padding: 0px;
+    }
+    .right-box{
+        padding: 40px 40px 40px 40px;
+    }
+
+    
+  }
+ */
+
+
